@@ -1,6 +1,6 @@
 # Xen Project
 
-===Creating a VM===
+###Creating a VM###
 
 xen-create-image is a xen-tools program for provisioning a virtual machine.
 It handles everything from creating the disks, applying the base filesystem, installing necessary packages and configuring networking.
@@ -12,7 +12,7 @@ We deploy Ubuntu 14.04 images by default from debian debootstrap via xen-tools.
 
 We typically create a new VM with this command and these options
 ```
-xen-create-image --hostname=test --size=20G --memory=1gb --vcpus=2 --ip=192.17.239.35
+xen-create-image --hostname#test --size#20G --memory#1gb --vcpus#2 --ip#192.17.239.35
 ```
 
 The command will generate the a config file for the VM which can be edited with new settings applied on its boot:
@@ -22,10 +22,10 @@ The command will generate the a config file for the VM which can be edited with 
 
 An example of more detailed options:
 ```
-xen-create-image --hostname=test --size=20G --memory=1g --vcpus=2 --lvm=XenVG --fs=ext4 --bridge=xenbr0 --ip=192.17.239.35 --netmask=255.255.255.128 --gateway=192.17.239.1 --pygrub --dist=trusty --role=repo,packages,nagios,puppet
+xen-create-image --hostname#test --size#20G --memory#1g --vcpus#2 --lvm#XenVG --fs#ext4 --bridge#xenbr0 --ip#192.17.239.35 --netmask#255.255.255.128 --gateway#192.17.239.1 --pygrub --dist#trusty --role#repo,packages,nagios,puppet
 ```
 
-===Start the new VM===
+###Start the new VM###
 
 Once the VM is created we must start it.
 ```
@@ -47,7 +47,7 @@ To stop the VM use
 xen destroy test
 ```
 
-===Delete VM===
+###Delete VM###
 
 First stop the VM and then remove it the images
 ```
@@ -55,7 +55,7 @@ xen destroy test-guest
 xen-delete-image test-guest --lvm XenVG
 ```
 
-===Attach to Console===
+###Attach to Console###
 
 Note: Exit the console with `Ctrl+]`
 
@@ -72,7 +72,7 @@ fgrep Pass /var/log/xen-tools/test.log
 Root Password   :  uBRPkj7V88l8szX
 ```
 
-===Manual LVM===
+###Manual LVM###
 
 Extend LVM for VM
 ```
