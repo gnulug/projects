@@ -30,6 +30,7 @@ class users::lug::bob {
 ```
 
 Other possible options:
+
 3. Set an optional password using the crypt() format, result of: `mkpasswd -m sha-512`
 4. Decide whether user needs sudo access
 5. Set shell to something other than bash
