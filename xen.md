@@ -25,7 +25,7 @@ An example of more detailed options:
 xen-create-image --hostname=test --size=20G --memory=1g --vcpus=2 --lvm=XenVG --fs=ext4 --bridge=xenbr0 --ip=192.17.239.35 --netmask=255.255.255.128 --gateway=192.17.239.1 --pygrub --dist=trusty --role=repo,packages,nagios,puppet
 ```
 
-###Start the new VM###
+###Start the VM###
 
 Once the VM is created we must start it.
 ```
