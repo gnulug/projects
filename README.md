@@ -7,3 +7,5 @@ Markdown documentation for our projects
 [Xen Project](xen.md) - Working with Xen Project
 
 [New Users](new_users.md) - Adding New Users to our VM Infrastructure
+
+[Proxy](proxy.md) - Using the Tor/Privoxy service
