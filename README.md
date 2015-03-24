@@ -12,4 +12,6 @@ Markdown documentation for our projects
 
 [Graphite](graphite.md) - Using Graphite and Collectd services
 
+[Grafana](grafana.md) - Using Grafana and InfluxDB
+
 [Website](website.md) - Repository for editing http://gnulug.org
