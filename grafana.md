@@ -2,17 +2,16 @@
 
 ### Grafana/InfluxDB System ###
 
-influxdb.gnulug.org -> docker1.gnulug.org
-grafana.gnulug.org  -> docker1.gnulug.org
+{influxdb,grafana}.gnulug.org -> docker1.gnulug.org
 * Collectd sends data to InfluxDB
 * Grafana retrieves and graphs data from InfluxDB
 
 Services are running from containers.
 
-Web interface:
+Web interfaces:
 ```
 http://influxdb.gnulug.org:8083 (Use proxy)
-http://grafan.gnulug.org
+http://grafana.gnulug.org
 ```
 
 ### Configuration ###
