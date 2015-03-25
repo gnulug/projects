@@ -59,6 +59,7 @@ $ service collectd restart
 
 Collectd server configuration:
 ```
+$ cat /etc/collectd/collectd.conf.d/server.conf
 LoadPlugin write_graphite
 
 <Plugin "network">
