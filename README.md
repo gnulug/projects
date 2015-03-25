@@ -15,3 +15,5 @@ Markdown documentation for our projects
 [Grafana](grafana.md) - Using Grafana and InfluxDB
 
 [Website](website.md) - Repository for editing http://gnulug.org
+
+[Repo](repo.md) - Retrieve packages from our repository
