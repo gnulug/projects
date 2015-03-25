@@ -8,6 +8,10 @@
 
 Services are running from containers.
 
+### Examples ###
+
+![Grafana Screenshot](http://jonschipp.com/lug/grafana.png)
+
 ### Use ###
 
 Web interfaces:
@@ -40,8 +44,6 @@ $ docker run -d --name influxdb -e PRE_CREATE_DB="collectd" -p 8083:8083 -p 8080
 
 Grafana:
 ```
-$ git clone https://github.com/tutumcloud/tutum-docker-grafana
-$ cd tutum-docker-influxdb
-$ docker built -t tutum/grafana .
-$ docker run -d --name grafana -p 80:80 -e INFLUXDB_HOST=influxdb.gnulug.org -e INFLUXDB_PORT=8080 -e INFLUXDB_NAME=collectd -e INFLUXDB_USER=user -e INFLUXDB_PASS=pass -e INFLUXDB_IS_GRAFANADB=true -e HTTP_USER=user -e HTTP_PASS=pass tutum/grafana
+mkdir /opt/grafana
+docker run -d -i -p 80:80 --name grafana2 -e "GF_SERVER_ROOT_URL=http://grafana.gnulug.org" -e "GF_SERVER_HTTP_PORT=80" -e "GF_SERVER_DOMAIN=grafana.gnulug.org" -e "GF_SECURITY_ADMIN_USER=user" -e "GF_SECURITY_ADMIN_PASSWORD=pass" -v /opt/grafana/:/opt/grafana/data grafana/grafana:develop
 ```
