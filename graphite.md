@@ -6,16 +6,23 @@ graphs.gnulug.org
 * Collectd daemon for system stats
 * Graphite for graphing stats
 
-Web interface
+### Examples ###
+
+![Graphite Screenshot](http://jonschipp.com/lug/graphite.png)
+
+### Use ###
+
+Web interface:
 ```
-http://graphs.gnulug.org
+http://grapite.gnulug.org
 ```
 
-Send collectd data from clients
+Send collectd data from clients:
 ```
 $ cat /etc/collectd/collectd.conf.d/lug.conf
 <Plugin "network">
-        Server "192.17.239.15" "25826"
+        Server "collectd.gnulug.org" "25826"
+        Server "influxdb.gnulug.org" "25826"
         </Plugin>
 
         LoadPlugin syslog
@@ -48,4 +55,25 @@ $ cat /etc/collectd/collectd.conf.d/lug.conf
         LoadPlugin users
         LoadPlugin vmem
 $ service collectd restart
+```
+
+Collectd server configuration:
+```
+LoadPlugin write_graphite
+
+<Plugin "network">
+        Listen "0.0.0.0" "25826"
+</Plugin>
+
+<Plugin write_graphite>
+        <Node "collectd">
+                Host "localhost"
+                Port "2003"
+                Protocol "tcp"
+                LogSendErrors true
+                StoreRates true
+                AlwaysAppendDS false
+                EscapeCharacter "_"
+        </Node>
+</Plugin>
 ```
