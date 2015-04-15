@@ -74,10 +74,32 @@ Root Password   :  uBRPkj7V88l8szX
 
 ###Manual LVM###
 
-Extend LVM for VM
+####Grow VM Disk####
+
+From the host, grow the disk LVM of the VM by 40GB.
+Shutdown the guest first after finding the name of the disk.
 ```
-lvextend -L +16G /dev/XenVG/test-guest
+lvs | grep test
+test-disk  XenVG -wi-ao---  40.00g
+test-swap  XenVG -wi-ao--- 128.00m
+xl destroy test
+lvextend -L+40G /dev/XenVG/test-disk
 ```
+
+Start the VM and resize the partition in the VM:
+```
+xen create /etc/xen/test.cfg
+root@test:~# resize2fs /dev/xvda2
+resize2fs 1.42.9 (4-Feb-2014)
+Filesystem at /dev/xvda2 is mounted on /; on-line resizing required
+old_desc_blocks = 3, new_desc_blocks = 5
+The filesystem on /dev/xvda2 is now 20971520 blocks long.
+
+root@test:~# df -h | grep xvda
+/dev/xvda2       79G  3.1G   72G   5% /
+```
+
+####Manual LVM Creation####
 
 Manually create disk and filesystem for new VM.
 ```
