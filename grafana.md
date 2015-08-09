@@ -37,7 +37,7 @@ $ grep -A 1 api config.toml
   # Configure the http api
   [api]
   port     = 8080
-$ docker built -t tutum/influxdb .
+$ docker build -t tutum/influxdb .
 $ mkdir /opt/influxdb
 $ docker run -d --name influxdb -e PRE_CREATE_DB="collectd" -p 8083:8083 -p 8080:8080 -p 2003:2003 -p 25826:25826/udp --expose 8090 --expose 8099 -v /opt/influxdb/:/data  tutum/influxdb
 ```
