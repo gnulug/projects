@@ -44,14 +44,14 @@ xl vm-list
 
 To stop the VM use
 ```
-xen destroy test
+xl destroy test
 ```
 
 ###Delete VM###
 
 First stop the VM and then remove it the images
 ```
-xen destroy test-guest
+xl destroy test-guest
 xen-delete-image test-guest --lvm XenVG
 ```
 
@@ -62,7 +62,7 @@ xen-delete-image test-guest --lvm XenVG
 To attach to the console of a VM use the console command from the Xen Project host.
 If you do not see the login screen then press enter and it will refresh the screen.
 ```
-xen console test
+xl console test
 <Enter>
 ```
 
@@ -88,7 +88,7 @@ lvextend -L+40G /dev/XenVG/test-disk
 
 Start the VM and resize the partition in the VM:
 ```
-xen create /etc/xen/test.cfg
+xl create /etc/xen/test.cfg
 root@test:~# resize2fs /dev/xvda2
 resize2fs 1.42.9 (4-Feb-2014)
 Filesystem at /dev/xvda2 is mounted on /; on-line resizing required
