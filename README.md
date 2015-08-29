@@ -2,6 +2,8 @@
 Markdown documentation for our projects
 
 ## Pages
+[Remote Access](remote_access.md) - Remotely accessing servers
+
 [Gitlab](gitlab.md) - Working with our private repositories
 
 [Workflow](workflow.md) - Development to Production Virtual Machines Procedure (Vagrant/Puppet)
