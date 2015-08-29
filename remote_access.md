@@ -4,7 +4,7 @@
 
 user -> *.gnulug.org
 * Command-line access to gnulug servers
-* 
+* Remote access is done via the SSH protocol
 
 Specify private key, username, and server to connect to:
 ```
