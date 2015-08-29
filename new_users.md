@@ -79,6 +79,12 @@ Open `modules/ssh/manifests/client.pp` and add the new user to the users array
 $users = [ .., 'bob' ]
 ```
 
+Finally, add the user to the list of AllowUsers and then commit changes and push.
+```
+$ grep AllowUsers modules/ssh/templates/sshd_config.erb
+AllowUsers alice bob
+```
+
 An admin can apply the configuration immediately on the host via
 ```
 cd /etc/puppet && git pull && ./puppet_apply.sh
