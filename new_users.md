@@ -1,12 +1,12 @@
 # New Users
 
-##Adding New Users##
+## Adding New Users
 1. Create user account on VMs
 2. Configure SSH Key for Access to VMs
 
 **Note:** Verify the new puppet configuration in Vagrant before comitting it!
 
-###New User Accounts###
+### New User Accounts
 
 Creating a new Linux user account will give you access to all our VMs. This is done by cron each hour.
 
@@ -59,7 +59,7 @@ An admin can apply the configuration immediately on the host via
 cd /etc/puppet && git pull && ./puppet_apply.sh
 ```
 
-###SSH Key Configuration###
+### SSH Key Configuration
 
 SSH keys are used to access our VMs which provides better security than passwords.
 Each new user will need to generate a key pair and add the key to puppet so it is configured on all the VMs.
