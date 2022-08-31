@@ -1,0 +1,60 @@
+- Grid computing network
+  - Globus Toolkit
+  - BOINC
+  - Donate to other projects.
+  - Run Covidsim
+  - Experiment with distributed schedulers
+    - Slurm vs HTCondor vs PBS
+    - SIG HPC?
+- Beowulf cluster
+  - Award compute resources based on volunteer time
+  - Guides
+    - https://en.wikipedia.org/wiki/Beowulf_cluster
+    - https://answers.uillinois.edu/illinois/page.php?id=47572
+    - https://ibiblio.org/pub/Linux/docs/HOWTO/archive/Beowulf-HOWTO.html
+  - PXE boot?
+  - Experiment with FS
+    - NFS?
+    - ZFS?
+  - Experiment: best perf per watt?
+  - Hardware
+    - Raspberry pi (use SPI interconnects?)
+    - Pine64
+    - Cubieboard
+    - Obsolete workstations
+    - Analog computing
+    - Switches?
+  - Experiment with other kernels
+    - Microkernels
+    - Unikernels
+    - Distrubed kernels
+    - *BSD
+    - Plan9
+    - Container migration
+  - Talk to SIG INFRA and SIG OPS
+  - Scavenge ACM cabinets for machines
+  - Experiment with virtualization tech
+    - k8s, Firecracker VM, others?
+  - CUDA
+- Collaborative infrastructure
+  - see https://vvvvvvaria.org/en/pages/collective-infrastructures.html
+  - IaaS
+    - Talk to ACM projects?
+    - Talk to SIG CLOUD
+  - Services
+    - https://github.com/gnulug/to-do/blob/master/servers.txt
+    - https://github.com/gnulug/to-do/blob/master/software.txt
+    - https://github.com/gnulug/projects/archive
+    - OpenStack
+    - SDF server or hashbang.sh
+    - Mercurial hosting
+    - IRC bouncer
+    - Nix build farm
+    - Bazel build farm
+    - GitLab/GitHub CI farm
+    - S3 storage space
+    - Spark
+    - RDP
+  - https://github.com/gnulug/to-do
+- Ham radio
+  - GNU Radio
