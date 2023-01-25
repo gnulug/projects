@@ -1,3 +1,43 @@
+- Update GNULUG website
+  - Rebrand GLUG -> GNULUG
+  - Join webring
+  - Join https://wiby.me/
+  - TOR onion protocol
+  - Implement https://indieweb.org/ standards
+  - https://gemini.circumlunar.space/
+- Merkle Tree File System (FUSE)
+  - https://github.com/charmoniumQ/merkle-tree-file-system
+- Write a kernel mod in Rust
+- RPi screen pixel
+  - https://github.com/acm-uiuc/pixel
+- ACM/GNULUG cloud
+  - Services
+    - https://github.com/gnulug/to-do/blob/master/servers.txt
+    - https://github.com/gnulug/to-do/blob/master/software.txt
+    - https://github.com/gnulug/projects/archive
+    - Public access (or member only) UNIX server, like SDF server or hashbang.sh
+    - IRC bouncer
+    - S3 storage space
+    - RDP
+    - https://charm.sh/
+    - Nix/Bazel/CCache build farm
+    - Host websites
+      - Host GNULUG
+      - Host member webspaces
+    - Host mirrors
+    - Host VCS (GitLab, sourcehut)
+    - GitLab/GitHub CI farm
+    - Host Matrix or RocketChat
+  - Guides
+    - https://en.wikipedia.org/wiki/Beowulf_cluster
+    - https://answers.uillinois.edu/illinois/page.php?id=47572
+    - https://ibiblio.org/pub/Linux/docs/HOWTO/archive/Beowulf-HOWTO.html
+  - IaaS
+    - Talk to ACM projects?
+    - Talk to SIG CLOUD
+- Maintain open source packages
+  - Package stuff for Spack, Nix, Guix
+  - Maintain stdeb
 - Grid computing network
   - Globus Toolkit
   - BOINC
@@ -7,11 +47,6 @@
     - Slurm vs HTCondor vs PBS
     - SIG HPC?
 - Beowulf cluster
-  - Award compute resources based on volunteer time
-  - Guides
-    - https://en.wikipedia.org/wiki/Beowulf_cluster
-    - https://answers.uillinois.edu/illinois/page.php?id=47572
-    - https://ibiblio.org/pub/Linux/docs/HOWTO/archive/Beowulf-HOWTO.html
   - PXE boot?
   - Experiment with FS
     - NFS?
@@ -38,24 +73,6 @@
   - CUDA
 - Collaborative infrastructure
   - see https://vvvvvvaria.org/en/pages/collective-infrastructures.html
-  - IaaS
-    - Talk to ACM projects?
-    - Talk to SIG CLOUD
-  - Services
-    - https://github.com/gnulug/to-do/blob/master/servers.txt
-    - https://github.com/gnulug/to-do/blob/master/software.txt
-    - https://github.com/gnulug/projects/archive
-    - OpenStack
-    - SDF server or hashbang.sh
-    - Mercurial hosting
-    - IRC bouncer
-    - Nix build farm
-    - Bazel build farm
-    - GitLab/GitHub CI farm
-    - S3 storage space
-    - Spark
-    - RDP
-    - https://charm.sh/
   - https://github.com/gnulug/to-do
 - Ham radio
   - GNU Radio
